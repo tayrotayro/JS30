@@ -68,7 +68,7 @@ function playSound(e) {
   key.classList.add('playing');
 }
 
-function playSoundEnd(e) {
+function playSound(e) {
     if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
   };
