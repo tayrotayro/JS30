@@ -68,9 +68,11 @@ function playSound(e) {
   key.classList.add('playing');
 }
 
-function playSound(e) {
+function playSoundEnd(e) {
     if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
+
+    console.log(this);
   };
 
 const keys = Array.from(document.querySelectorAll('.key'));
